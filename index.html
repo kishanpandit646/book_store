@@ -1,1 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BookStore DApp</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>BookStore DApp</h1>
+        </header>
+        <section class="book-form">
+            <h2>Add New Book</h2>
+            <form id="add-book-form">
+                <input type="text" id="title" placeholder="Book Title" required>
+                <input type="text" id="author" placeholder="Book Author" required>
+                <input type="text" id="category" placeholder="Book Category" required>
+                <input type="number" id="price" placeholder="Price (in Wei)" required>
+                <input type="number" id="stock" placeholder="Stock" required>
+                <button type="submit">Add Book</button>
+            </form>
+        </section>
+        <section class="book-list">
+            <h2>Available Books</h2>
+            <div id="book-list"></div>
+        </section>
+        <section class="purchase-form">
+            <h2>Purchase Book</h2>
+            <input type="number" id="purchase-id" placeholder="Book ID" required>
+            <input type="number" id="purchase-quantity" placeholder="Quantity" required>
+            <button id="purchase-button">Purchase</button>
+        </section>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/web3/dist/web3.min.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
 
